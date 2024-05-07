@@ -1,0 +1,238 @@
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\newenvironment{changemargin}[2]{%
+  \begin{list}{}{%
+    \setlength{\topsep}{0pt}%
+    \setlength{\leftmargin}{#1}%
+    \setlength{\rightmargin}{#2}%
+    \setlength{\listparindent}{\parindent}%
+    \setlength{\itemindent}{\parindent}%
+    \setlength{\parsep}{\parskip}%
+  }%
+  \item[]}{\end{list}}
+
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.75in}
+\addtolength{\evensidemargin}{-0.75in}
+\addtolength{\textwidth}{1.5in} % in order to be centered, textwidth should be (-1)(oddsidemargin+evensidemargin)
+\addtolength{\topmargin}{-0.75in}
+\addtolength{\textheight}{1.5in} % this should be twice the value of the top margin
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[5]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1}  {#2} & #3 \\
+      \textit{\small#4} & \textit{\small #5} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[6]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} -- {#2} & \textbf{#3} \\
+      \textit{\small#4} \\ 
+      \textit{\small #5} \\
+      \textit{\small #6} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationAltSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} -- {#2} & \textbf{#3} \\
+      \textit{\small#4} \\ 
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\extracurricularSubheading}[3]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} {#2} & {#3} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+\begin{document}
+
+\begin{center}
+    \huge \textsc{Abigail Schneider} \\ \vspace{1pt}
+    \small +1 612-403-5240 $|$ \href{mailto:abbyschneider612@gmail.com}{abbyschneider612@gmail.com} $|$ 
+    \href{http://cyberbreeze.xyz}{cyberbreeze.xyz}
+    
+    \vspace{-0.15in}
+
+\end{center}
+
+\section{Education}
+  \resumeSubHeadingListStart
+    \educationSubheading
+      {University of Nebraska-Lincoln}{Lincoln, NE}{GPA: 3.97/4.00}
+      {Bachelor of Science in Business Administration; Major: Economics (with Highest Distinction)}{Bachelor of Arts; Major: Mathematics (with High Distinction)}{Phi Beta Kappa}
+    \educationAltSubheading
+      {Jesus College, University of Oxford}{Oxford, UK}{}
+      {International Economics \& Political Economy of Great Britain (6 credits)}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Work Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Buildertrend}{}{January 2024 -- Current}
+      {Quantitative Strategist II}{Omaha, NE}
+      \resumeItemListStart
+        \resumeItem{ Supported Buildertrend's initiative to adopt a data-centric decision making framework by, e.g., creating educational materials to reorient the analytics department around CI/CD design principles (part of a department-wide strategic shift toward quality and trust assurance). }
+        \resumeItem{ Identified areas for improvement on BT's Tableau server by purpose-building admin tools to identify and address inefficiencies. Eliminated key redundancies and refactored resource-intensive assets, resulting in more than a 50\% reduction in server runtime. }
+        \resumeItem{ Conceived, developed, and delivered a two-day lecture series on Tableau best practices for the Data Science team, culminating in a pair programming exercise demonstrating the new standards, which have since been widely adopted by the organization -- including in the training of new Tableau users. } 
+
+         \resumeItemListEnd
+
+  
+      \resumeSubheading
+      {Buildertrend}{}{January 2022 -- January 2024}
+      {Data Analyst}{Omaha, NE}
+      \resumeItemListStart
+        \resumeItem{Eliminated repetitive manual tasks by automating the company's lead source attribution \& analytics. Developed dashboard for leadership to view month-over-month performance, topline KPIs, and conversion rates by channel at a glance.}
+        \resumeItem{Overhauled a commonly-used but basic report, swapping out a static Excel sheet of list statistics for a dynamic, drillable, and parameterized Tableau report -- to be used as a primary aid in sales pitches for the company's Match \& Append data product.}
+        \resumeItem{Fetched customer lists and filled data requests for departments across the company, particularly marketing and user research. Kept detailed documentation of my processes, some of which are shared as training materials.}
+        \resumeItemListEnd
+
+    \resumeSubheading
+      {Bureau of Business Research --}{UNL College of Business}{November 2018 -- May 2021}
+      {BBR Scholar}{Lincoln, NE}
+      \resumeItemListStart
+        \resumeItem{Advanced a research project relating to the migration implications of a given state's adoption of -- or failure to adopt -- an income tax exemption for military pensioners' retirement pay (particularly when a state's neighbors differ in their tax treatment of this form of income).}
+        \resumeItem{Assessed the effect of the Nebraska Historic Tax Credit  renovation incentive program on property values of treated properties and of surrounding areas, with a focus on the Lincoln and Omaha, NE metro areas.}
+        \resumeItem{Conducted annual ``R Bootcamp" seminar, introducing new Scholars to the basics of the R programming language and demonstrating a few applications.}
+      \resumeItemListEnd
+      
+
+  \resumeSubHeadingListEnd
+
+
+\section{Non-Work Highlights}
+  \resumeSubHeadingListStart
+
+    \extracurricularSubheading
+      {Labor Economics Reading Group --}
+      {UNL Department of Economics}
+      {May 2020 -- May 2021}
+      \resumeItemListStart
+        \resumeItem{Strengthen academic skillset through regular participation in a reading group of professors and graduate students, keeping current with research trends in the labor and microeconomics fields, asking critical questions about authors' methods, and presenting papers of personal research interest to the group.}
+    
+      \resumeItemListEnd
+      
+    \extracurricularSubheading
+      {Nebraska Business Honors Academy}
+      {}
+      {August 2017 -- May 2021}
+      \resumeItemListStart
+        \resumeItem{Selected from 250+ applicants to be one of 37 members of the Honors Academy on the basis of my leadership and academic ability. Served on the Philanthropy Committee and received several awards for top academic performance.}
+        \resumeItem{Mentored three underclass Academy students in the Peer Academy Liaison program, aiding their transitions into college.}
+      \resumeItemListEnd    
+    \resumeSubHeadingListEnd
+
+
+\section{Technical Skills and Certifications}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Spoken Languages}{: English, Spanish, Italian} \\
+     \textbf{Technical}{: Tableau, Postman, Excel, Ruby (on Rails), LaTeX, HTML/CSS.} \\
+     \textbf{Certifications}{: CITI certified (April 2019), Passed SOA Exam P/1 (October 2018)}
+     }}
+ \end{itemize}
+ 
+\section{Personal Interests}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     Interests include gardening, dreampop music, long walks, DIY electronics, and train travel -- among many other things.
+     }
+     }
+ \end{itemize}
+ 
+%-------------------------------------------
+\end{document}
+    \resumeSubheading
+      {UNL Department of Mathematics}{}{August 2019 -- December 2019}
+      {Learning Assistant, Grader (MATH 309)}{Lincoln, NE}
+      \resumeItemListStart
+        \resumeItem{Evaluated students' assignments for an intermediate undergraduate course in mathematical proof theory -- responsibilities included checking logical validity of students' proofs and providing detailed feedback to students to help them build foundations for advanced mathematics.}

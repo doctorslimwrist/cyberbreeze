@@ -11,6 +11,8 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
+    "katex": "^0.13.24",
+    "vatex": "^0.1.0",
     "vue": "^3.4.21",
     "vue-router": "^4.3.0"
   },

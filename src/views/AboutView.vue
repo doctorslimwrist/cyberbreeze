@@ -1,7 +1,11 @@
+<script setup>
+import TheResume from '../components/TheResume.vue'
+</script>
+
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
+  <main>
+    <TheResume />
+  </main>
 </template>
 
 <style>
