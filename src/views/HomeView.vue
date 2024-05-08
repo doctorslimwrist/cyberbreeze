@@ -1,5 +1,17 @@
+<script setup>
+import ThePrinciples from '../components/ThePrinciples.vue'
+</script>
+
 <template>
   <main>
-    <h3>here's my homepage.</h3>
+    <div>
+      <ThePrinciples />
+    </div>
   </main>
 </template>
+
+<style>
+.callout {
+  max-width: 300px;
+}
+</style>

@@ -1,12 +1,12 @@
 <script setup>
-import ResumeItem from './ResumeItem.vue'
+import ListItem from './ListItem.vue'
 import DocumentationIcon from './icons/IconDocumentation.vue'
 import ToolingIcon from './icons/IconTooling.vue'
 import EcosystemIcon from './icons/IconEcosystem.vue'
 </script>
 
 <template>
-  <ResumeItem>
+  <ListItem>
     <template #icon>
       <DocumentationIcon />
     </template>
@@ -14,9 +14,9 @@ import EcosystemIcon from './icons/IconEcosystem.vue'
     <h3>BSBA in Economics (with Highest Distinction)</h3>
     <h3>BA in Mathematics (with High Distinction)</h3>
     <h3>Phi Beta Kappa</h3>
-  </ResumeItem>
+  </ListItem>
 
-  <ResumeItem>
+  <ListItem>
     <template #icon>
       <ToolingIcon />
     </template>
@@ -39,9 +39,9 @@ import EcosystemIcon from './icons/IconEcosystem.vue'
       which have since been widely adopted by the organization -- including in the training of new
       Tableau users.
     </p>
-  </ResumeItem>
+  </ListItem>
 
-  <ResumeItem>
+  <ListItem>
     <template #icon>
       <ToolingIcon />
     </template>
@@ -57,13 +57,13 @@ import EcosystemIcon from './icons/IconEcosystem.vue'
       property values of treated properties and of surrounding areas, with a focus on the Lincoln
       and Omaha, NE metro areas.
     </p>
-  </ResumeItem>
-  <ResumeItem>
+  </ListItem>
+  <ListItem>
     <template #icon>
       <EcosystemIcon />
     </template>
     <template #heading>Personal Interests</template>
     Interests include gardening, dreampop music, long walks, DIY electronics, and train travel --
     among many other things.
-  </ResumeItem>
+  </ListItem>
 </template>

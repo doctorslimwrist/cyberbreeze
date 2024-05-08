@@ -4,20 +4,19 @@ import HelloWorld from './components/HelloWorld.vue' // stuff that gets rendered
 </script>
 
 <template>
-  <header>
-    <img alt="Me smiling" class="logo" src="@/assets/headshot.png" width="200" height="200" />
+  <div class="static">
+    <header>
+      <img alt="Me smiling" class="logo" src="@/assets/headshot.png" width="225" height="225" />
 
-    <div class="wrapper">
-      <HelloWorld msg="Hi, I'm Abby." />
-
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-
-        <RouterLink to="/about">My resume</RouterLink>
-      </nav>
-    </div>
-  </header>
-
+      <div class="wrapper">
+        <HelloWorld msg="Hi, I'm Abby." />
+        <nav>
+          <RouterLink to="/about">My Resume</RouterLink>
+          <RouterLink to="/contact">Contact Me</RouterLink>
+        </nav>
+      </div>
+    </header>
+  </div>
   <RouterView />
 </template>
 
@@ -31,6 +30,10 @@ header {
   display: block;
   border-radius: 50%;
   margin: 0 auto 2rem;
+}
+
+.static {
+  width: 550px;
 }
 
 nav {

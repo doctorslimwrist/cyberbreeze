@@ -1,6 +1,33 @@
+<script setup>
+import TheContactInfo from '../components/TheContactInfo.vue'
+</script>
+
 <template>
-  <div>
-    <h1>Phone</h1>
-    <h1>Email</h1>
-  </div>
+  <main>
+    <div>
+      <TheContactInfo />
+    </div>
+  </main>
 </template>
+
+<style>
+@media (min-width: 1024px) {
+  .about {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+}
+
+#inside {
+  position: fixed;
+  width: 300px;
+  border: 4px solid red;
+  margin: -200px 100px -200px 100px;
+}
+
+#container {
+  height: 100%;
+  border: 4px solid greenyellow;
+}
+</style>

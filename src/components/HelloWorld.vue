@@ -10,8 +10,7 @@ defineProps({
 <template>
   <div class="greetings">
     <h1 class="pink">{{ msg }}</h1>
-    <h3>I am a data librarian.</h3>
-    <h3>I wrote <RouterLink to="/contact">Mnemosyne</RouterLink>.</h3>
+    <p>I'm a Quantitative Strategist, Data Librarian + Tableau Administrator.</p>
   </div>
 </template>
 

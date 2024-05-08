@@ -4,7 +4,9 @@ import TheResume from '../components/TheResume.vue'
 
 <template>
   <main>
-    <TheResume />
+    <div>
+      <TheResume />
+    </div>
   </main>
 </template>
 
@@ -15,5 +17,17 @@ import TheResume from '../components/TheResume.vue'
     display: flex;
     align-items: center;
   }
+}
+
+#inside {
+  position: fixed;
+  width: 300px;
+  border: 4px solid red;
+  margin: -200px 100px -200px 100px;
+}
+
+#container {
+  height: 100%;
+  border: 4px solid greenyellow;
 }
 </style>
