@@ -11,6 +11,7 @@ import HelloWorld from './components/HelloWorld.vue' // stuff that gets rendered
       <div class="wrapper">
         <HelloWorld msg="Hi, I'm Abby." />
         <nav>
+          <RouterLink to="/">Home</RouterLink>
           <RouterLink to="/about">My Resume</RouterLink>
           <RouterLink to="/contact">Contact Me</RouterLink>
         </nav>
