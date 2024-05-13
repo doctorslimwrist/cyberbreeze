@@ -13,7 +13,6 @@ import HelloWorld from './components/HelloWorld.vue' // stuff that gets rendered
         <nav>
           <RouterLink to="/">Home</RouterLink>
           <RouterLink to="/about">My Resume</RouterLink>
-          <RouterLink to="/contact">Contact Me</RouterLink>
         </nav>
       </div>
     </header>
@@ -31,10 +30,6 @@ header {
   display: block;
   border-radius: 50%;
   margin: 0 auto 2rem;
-}
-
-.static {
-  width: 550px;
 }
 
 nav {

@@ -4,7 +4,7 @@ import TheResume from '../components/TheResume.vue'
 
 <template>
   <main>
-    <div>
+    <div class="resume">
       <TheResume />
     </div>
   </main>
@@ -15,19 +15,12 @@ import TheResume from '../components/TheResume.vue'
   .about {
     min-height: 100vh;
     display: flex;
-    align-items: center;
+    align-items: right;
   }
-}
 
-#inside {
-  position: fixed;
-  width: 300px;
-  border: 4px solid red;
-  margin: -200px 100px -200px 100px;
-}
-
-#container {
-  height: 100%;
-  border: 4px solid greenyellow;
+  main .resume {
+    max-height: 300px;
+    overflow-y: scroll;
+  }
 }
 </style>

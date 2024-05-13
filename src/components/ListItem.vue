@@ -4,7 +4,7 @@
       <slot name="icon"></slot>
     </i>
     <div class="details">
-      <h3>
+      <h3 class="pink">
         <slot name="heading"></slot>
       </h3>
       <slot></slot>
@@ -14,7 +14,7 @@
 
 <style scoped>
 .item {
-  margin-top: 2rem;
+  margin-top: 2.5rem;
   display: flex;
   position: relative;
 }
@@ -22,6 +22,7 @@
 .details {
   flex: 1;
   margin-left: 1rem;
+  font-weight: 100;
 }
 
 i {
@@ -34,16 +35,16 @@ i {
 }
 
 h3 {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: 500;
   margin-bottom: 0.4rem;
-  color: var(--color-heading);
 }
 
 @media (min-width: 1024px) {
   .item {
     margin-top: 0;
-    padding: 0.4rem 0 1rem calc(var(--section-gap) / 2);
+    margin-left: 50px;
+    padding: 0.4rem 0 1rem calc(var(--section-gap) / 2.5);
   }
 
   i {

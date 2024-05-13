@@ -18,7 +18,7 @@ a,
 a,
 .pink {
   text-decoration: none;
-  color: hsla(3, 99%, 28%, 0.7);
+  color: hsla(3, 99%, 28%, 0.8);
   transition: 0.4s;
   padding: 3px;
 }
