@@ -1,11 +1,11 @@
 <script setup>
-import ThePrinciples from '../components/ThePrinciples.vue'
+import TheTopics from '../components/TheTopics.vue'
 </script>
 
 <template>
   <main>
     <div>
-      <ThePrinciples />
+      <TheTopics />
     </div>
   </main>
 </template>
