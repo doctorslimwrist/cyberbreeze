@@ -5,10 +5,8 @@ import HelloWorld from './components/HelloWorld.vue' // stuff that gets rendered
 
 <template>
   <header>
-    <img alt="Me smiling" class="logo" src="@/assets/headshot.png" width="225" height="225" />
-
     <div class="wrapper">
-      <HelloWorld msg="Hi, I'm Abby." />
+      <HelloWorld msg="Welcome to my garden." />
       <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">My Resume</RouterLink>
