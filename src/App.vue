@@ -4,19 +4,17 @@ import HelloWorld from './components/HelloWorld.vue' // stuff that gets rendered
 </script>
 
 <template>
-  <div class="static">
-    <header>
-      <img alt="Me smiling" class="logo" src="@/assets/headshot.png" width="225" height="225" />
+  <header>
+    <img alt="Me smiling" class="logo" src="@/assets/headshot.png" width="225" height="225" />
 
-      <div class="wrapper">
-        <HelloWorld msg="Hi, I'm Abby." />
-        <nav>
-          <RouterLink to="/">Home</RouterLink>
-          <RouterLink to="/about">My Resume</RouterLink>
-        </nav>
-      </div>
-    </header>
-  </div>
+    <div class="wrapper">
+      <HelloWorld msg="Hi, I'm Abby." />
+      <nav>
+        <RouterLink to="/">Home</RouterLink>
+        <RouterLink to="/about">My Resume</RouterLink>
+      </nav>
+    </div>
+  </header>
   <RouterView />
 </template>
 
